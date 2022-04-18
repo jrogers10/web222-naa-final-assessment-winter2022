@@ -1,0 +1,343 @@
+<!--
+  /**
+ * Julian Rogers
+ * 113 159 172
+ * jrogers10@myseneca.ca
+ *
+ * WEB222 Final Assessment, Winter 2022
+ *
+ * index.html
+ */
+-->
+
+<!DOCTYPE html>
+<html lang="en-CA">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Julian Rogers</title>
+
+    <!--favicon-->
+    <link rel="icon" href="./images/favicon_io/favicon.ico" type="image/x-icon">
+
+    <!--bootstrap css.-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <!--css-->
+    <link rel="stylesheet" href="./css/styles.css" type="text/css">
+  </head>
+
+  <body>
+    <main>
+      <section id="landing">
+        <div>
+          <picture>
+            <source srcset="./images/retro-computer-compressed.webp">
+            <source srcset="./images/retro-computer-compressed.jpg">
+            <img src="./images/retro-computer-full.jpg" alt="retro commodore computer">
+          </picture>
+
+          <h1>JULIAN ROGERS</h1>
+          <p><em>Computer Programmer, Perpetually Curious Human</em></p>
+
+          <div id="landing-btns">
+            <div>
+              <a href="./resources/jrogers-resume.pdf" download="jrogers-resume.pdf">
+                <button>&#10515; Resume</button>
+              </a>
+            </div>
+
+            <div>
+              <a href="#contact">
+                <button id="contact-btn">Contact Me</button>
+              </a>
+            </div>
+          </div>
+          <p><span class="emoji">&#128071;</span></p>
+        </div>
+      </section>
+
+      <section id="infograph">
+        <div class="about-info">
+          <section id="about-me">
+            <h2>&#128269; About Julian</h2>
+            <p>
+              Having a long-standing interest in computer programming, Julian
+              is ready to forge that fascination into an exciting career in
+              software development. Having worked on a variety of personal and
+              volunteer projects in areas such as console applications, shell
+              scripting, database programming, web development, and minor video
+              game development, Julian is capable of bringing a reasonably diverse
+              skill set to any entry level software development project. He is
+              well versed in programming paradigms such as object-oriented and
+              functional development, and is familiar with the overall software development life cycle.
+              Julian is fluent with programming languages such as C/C++, C#, Java,
+              JavaScript, HTML, CSS, and has proficiency in working with UNIX-like/
+              *nix and Windows operating systems.
+            </p>
+            <p>
+              Julian is an independent, diligent, detail-oriented, self-
+              starter, making him a great addition to your software development
+              team. He is always looking to work on new, interesting, and
+              challenging projects, with engaging and like-minded colleagues.
+              Being reasonably flexible, Julian takes an open-minded approach to
+              projects, exploring both conventional and unconventional development
+              processes and programming solutions. Julian is always willing to
+              learn, be it improving in areas he is already familiar with,
+              bolstering skills that may be lacking, or starting from step one in
+              the journey of learning something completely new; he is forever
+              striving for both personal and professional progress.
+            </p>
+          </section>
+
+          <section id="basic-info">
+            <h2>&#128712; Basic Information</h2>
+
+            <div>
+              <h5>NAME:</h5>
+              <p>Julian Rogers</p>
+
+              <h5>DATE:</h5>
+              <time class="curr-date"><mark>DATE IN JS</mark></time>
+
+              <h5>COURSE:</h5>
+              <p>Web Programming Principles</p>
+
+              <h5>SECTION:</h5>
+              <p>NAA</p>
+
+              <h5>PROFESSOR:</h5>
+              <p>David Humphrey</p>
+            </div>
+          </section>
+        </div>
+
+        <section id="honesty">
+          <h2>&#128519; Academic Honesty Statement</h2>
+          <p>
+            <em>
+              I declare that my assessment is wholly my own work in accordance with Seneca Academic
+              Policy. No part of this assessment has been copied manually or electronically from any other
+              source (including web sites) except for the information supplied by the WEB222 instructors and /
+              or made available in this assessment for my use. I also declare that no part of this assignment
+              has been distributed to other students.
+            </em>
+          </p>
+          <time class="curr-date"><mark>DATE IN JS</mark></time>
+        </section>
+      </section>
+
+      <section id="education">
+        <h2>&#128218; Education</h2>
+
+        <div id="edu-senecac" class="edu-card">
+          <div class="edu-card-left">
+            <div>
+              <h3>2017 - 2024</h3>
+            </div>
+          </div>
+
+          <section class="edu-card-txt">
+            <h3>&#127979; Seneca College</h3>
+            <h4>School of Software Design & Data Science</h4>
+            <p>Computer Programming</p>
+          </section>
+        </div>
+
+        <div id="edu-uwaterloo" class="edu-card">
+          <div class="edu-card-left">
+            <h3>2011 - 2012</h3>
+          </div>
+
+          <section class="edu-card-txt">
+            <h3>&#127979; University of Waterloo</h3>
+            <h4>Faculty of Mathematics</h4>
+            <p>Computer Science</p>
+          </section>
+        </div>
+      </section>
+
+      <section id="contact">
+        <h2>&#128231; Contact Me</h2>
+
+        <p>A <span class="text-danger">*</span> denotes a required field.</p>
+
+        <form id="contact-form" action="https://httpbin.org/post" method="post">
+          <div class="row">
+            <div class="col form-group">
+              <label for="fname"><span class="text-danger">*</span> First Name</label>
+              <input id="fname" class="form-control" name="fname" autocomplete="given-name" placeholder="John / Jane"
+                type="text" tabindex="1" required>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col form-group">
+              <label for="lname"><span class="text-danger">*</span> Last Name</label>
+              <input id="lname" class="form-control" name="lname" autocomplete="family-name" placeholder="Doe"
+                type="text" tabindex="2" required>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col form-group">
+              <label for="email"><span class="text-danger">*</span> Email Address</label>
+              <input id="email" class="form-control" name="email" autocomplete="email" placeholder="someone@example.com"
+                type="email" tabindex="3" required>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="form-group col">
+              <label for="address"><span class="text-danger">*</span> Street Address</label>
+              <input id="address" class="form-control" name="address" autocomplete="street-address" type="text"
+                tabindex="4" required>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col form-group">
+              <label for="city"><span class="text-danger">*</span> City</label>
+              <input id="city" class="form-control" name="city" autocomplete="address-level2" list="cities" tabindex="5"
+                required>
+              <datalist id="cities" class="" name="cities" tabindex="6">
+                <option value="Charlottetown"></option>
+                <option value="Edmonton"></option>
+                <option value="Fredericton"></option>
+                <option value="Halifax"></option>
+                <option value="Iqaluit"></option>
+                <option value="Ottawa"></option>
+                <option value="Quebec City"></option>
+                <option value="Regina"></option>
+                <option value="St. John's"></option>
+                <option value="Toronto"></option>
+                <option value="Victoria"></option>
+                <option value="Whitehorse"></option>
+                <option value="Winnipeg"></option>
+                <option value="Yellowknife"></option>
+              </datalist>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col form-group">
+              <label for="prov"><span class="text-danger">*</span> Province</label>
+              <select id="prov" class="form-control" name="prov" autocomplete="address-level1" tabindex="7">
+                <option>Alberta</option>
+                <option>British Columbia</option>
+                <option>Manitoba</option>
+                <option>New Brunswick</option>
+                <option>Newfoundland and Labrador</option>
+                <option>Northwest Territories</option>
+                <option>Nova Scotia</option>
+                <option>Nunavut</option>
+                <option selected>Ontario</option>
+                <option>Prince Edward Island</option>
+                <option>Quebec</option>
+                <option>Saskatchewan</option>
+                <option>Yukon</option>
+              </select>
+            </div>
+          </div>
+
+          <!--validated with regex via JS-->
+          <div class="row">
+            <div class="col form-group">
+              <label for="post-code"><span class="text-danger">*</span> Postal Code</label>
+              <input id="post-code" class="form-control" name="postcode" autocomplete="postal-code" type="text"
+                tabindex="8" placeholder="M2J 2X5" required>
+              <div class="invalid-feedback">
+                Enter a valid Canadian postal code.
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col form-group">
+              <label class=""><span class="text-danger">*</span> Subject</label>
+              <div class="form-check ml-5 mb-2">
+                <input id="question" class="radio-btn form-check-input" type="radio" name="subject" value="question"
+                  tabindex="9" checked>
+                <label class="form-check-label" for="appt-morn">Question</label>
+              </div>
+
+              <div class="form-check ml-5 mb-2">
+                <input id="comment" class="radio-btn form-check-input" type="radio" name="subject" value="comment"
+                  tabindex="10">
+                <label class="form-check-label" for="appt-aft">Comment</label>
+              </div>
+
+              <div class="form-check ml-5">
+                <input id="hiring" class="radio-btn form-check-input" type="radio" name="subject" value="hiring"
+                  tabindex="11">
+                <label class="form-check-label" for="appt-even">Hiring</label>
+              </div>
+
+              <div id="work" class="ml-5">
+                <div class="row mt-3">
+                  <div class="col form-group">
+                    <label for="pay-rate"><span class="text-danger">*</span> Pay/Hour</label>
+                    <input id="pay-rate" class="form-control" name="pay" placeholder="$$$" type="number" tabindex="12"
+                      required>
+                    <div class="invalid-feedback">
+                      $0 or greater.
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col form-group">
+                    <label for="url">Company Website URL</label>
+                    <input id="url" class="form-control" name="url" autocomplete="off"
+                      placeholder="http://company.website" type="url" tabindex="13">
+                    <small class="form-text text-muted">Optional</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col form-group">
+              <label for="feedback"><span class="text-danger">*</span> Talk to Me</label>
+              <textarea id="feedback" class="form-control" name="feedback" rows="5" maxlength="1000" tabindex="14"
+                required></textarea>
+            </div>
+          </div>
+
+          <div class="d-flex flex-row-reverse mt-2">
+            <input class="btn btn-primary" type="submit" name="submit" value="Submit" tabindex="15">
+            <input class="btn btn-secondary mr-3" type="reset" name="reset" value="Reset" tabindex="16">
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <small>
+        <p><a href="https://unsplash.com/photos/yP89apz2TAA" target="_blank"><em>Retro Computer</em></a> by <a
+            href="https://unsplash.com/@lorenzoherrera" target="_blank">Lorenzo Herrera</a></p>
+        <p><a href="https://favicon.io/favicon-generator/">favicon.io</a></p>
+        <p>Julian Rogers 2022</p>
+      </small>
+    </footer>
+
+    <!--bootstrap javascript.-->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"></script>
+  </body>
+
+  <!--javascript-->
+  <script src="./js/webpage.js"></script>
+
+</html>

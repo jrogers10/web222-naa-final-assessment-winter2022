@@ -1,0 +1,256 @@
+/**
+ * Julian Rogers
+ * 113 159 172
+ * jrogers10@myseneca.ca
+ *
+ * WEB222 Final Assessment, Winter 2022
+ *
+ * styles.css
+ */
+
+ /*
+  Google Fonts:
+    - 'Orbitron' https://fonts.google.com/specimen/Orbitron
+    - 'Lato'     https://fonts.google.com/specimen/Lato
+*/
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+/* *{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} */
+
+html, body{
+  width: 93vw;
+
+  /* min-width: 400px; */
+
+  margin: auto;
+
+  background-color: grey;
+
+  font-family: 'Lato', sans-serif;
+  text-align: center;
+}
+
+body{
+  max-width: 1024px;
+}
+
+#landing{
+  width: 100%;
+  height: 100vh;
+
+  font-family: 'Orbitron', sans-serif;
+
+  display: grid;
+  place-items: center;
+}
+
+#landing img{
+  width: 75%;
+}
+
+h1{
+  padding-top: 20px;
+  font-size:4em;
+}
+
+#landing p{
+  font-size: 1.5em;
+}
+
+#landing-btns{
+width: 50%;
+margin: auto;
+
+display: flex;
+justify-content: space-between;
+}
+
+#landing button{
+  padding: 10px 20px;
+
+  background-color: lightgrey;
+
+  font-weight: bold;
+}
+
+.emoji{
+  font-size: 4em;
+}
+
+#infograph{
+  text-align: left;
+}
+
+#contact-form{
+  text-align: left;
+}
+
+#landing,
+#infograph,
+#education,
+#contact{
+  padding: 40px 40px;
+}
+
+#landing,
+footer{
+  background-color: #5c8d89;
+}
+
+#infograph{
+  background-color: #74b49b;
+}
+
+#basic-info div{
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  column-gap: 1em;
+}
+
+#basic-info h5{
+  grid-template-rows: 1fr;
+}
+
+.about-info{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 2em;
+
+  padding: 20px 20px;
+
+  box-shadow: 0 0 15px black;
+}
+
+#honesty{
+  margin-top: 30px;
+}
+
+#education{
+  background-color: #a7d7c5;
+}
+
+#education h2 {
+  margin-bottom: 35px;
+}
+
+.edu-card{
+  display: flex;
+  box-shadow: 0 0 15px black;
+}
+
+#edu-senecac{
+  margin-bottom: 30px;
+}
+
+.edu-card-left{
+  padding-left: 20px;
+  padding-right: 20px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#edu-senecac .edu-card-left{
+  color: white;
+  background-color: darkred;
+}
+
+#edu-uwaterloo .edu-card-left{
+  color: goldenrod;
+  background-color: black;
+}
+
+.edu-card-txt{
+  padding: 20px;
+  text-align: left;
+}
+
+#contact{
+  background-color: #f4f9f4;
+}
+
+footer{
+  padding-top: 40px;
+  padding-bottom: 10px;
+}
+
+footer a{
+  color: purple;
+}
+
+footer li{
+  list-style-type: none;
+}
+
+footer p{
+  /* padding-top: 5px;
+  padding-bottom: 5px; */
+
+  font-family: 'Orbitron', sans-serif;
+  font-weight: bold;
+}
+
+@media screen and (max-width:800px){
+
+  #landing,
+  #infograph,
+  #education,
+  #contact{
+  padding: 10px;
+  }
+
+  h1{
+    font-size: 3em;
+  }
+
+  #landing img{
+    width: 100%;
+  }
+
+  #landing-btns{
+    display: grid;
+    justify-content: center;
+  }
+
+  #contact-btn{
+    margin-top: 15px;
+  }
+
+  .about-info{
+    grid-template-columns: 1fr;
+  }
+
+  #basic-info div{
+    grid-template-columns: 1fr 4fr;
+  }
+
+  #basic-info{
+    margin-top: 10px;
+  }
+
+  .edu-card{
+    display: grid;
+  }
+
+  #education{
+    padding-bottom: 30px;
+  }
+
+  #education h2{
+    padding-top: 20px;
+  }
+
+  .edu-card-left{
+    padding-top:10px;
+  }
+
+  #contact{
+    padding-top: 30px;
+  }
+}
